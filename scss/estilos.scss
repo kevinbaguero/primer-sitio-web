@@ -1,0 +1,193 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+@import "queries";
+
+$alto: 50vh;
+$colorprincipal: #C53515;
+$colorletra: white;
+
+@mixin seccion_destacada{
+
+    background-color: $colorprincipal;
+    color: $colorletra;
+    p{
+        color: $colorletra;
+    }
+}
+
+.educacion{
+    @include seccion_destacada()
+}
+
+
+
+body {
+    
+    font:{
+        style: normal;
+        weight: normal;
+        size: 25px;
+        family: 'Alumni Sans';
+    }
+    text:{
+        align: center;
+    }
+    p{
+        color: #BF5942;
+        line-height: 1.2;
+        letter-spacing: normal;
+    }
+
+
+}
+
+/*-----------------Menu---------------*/
+nav ul{
+
+
+
+    li{
+        background-color: #BF5942;
+        text-decoration: 0;
+        list-style-type: none;
+        list-style-position: inside;
+        text-transform:uppercase;
+        display: inline-block;
+        position:relative;
+        margin: 7px;
+        padding: 5px;
+        border-radius: 5px;
+
+        a{
+            color: black;
+            text-decoration: none;
+            }
+        :hover{
+                color: #C53515;
+                background-color: #000000;
+                cursor: pointer;
+                display: block;
+                border-radius: 5px;
+        }
+    }
+}
+
+/*-----------------Seccion Quien Soy---------------*/
+
+.imagenIndex {
+    width: 150px;
+    height: 150px;
+}
+
+.perfil {
+    background-color: #f1f1f1;
+    display: flex;
+
+    &__perfilTexto{
+        /*color: #ffffff;*/
+        position: absolute;
+        text-align: right;
+        width: 40%;
+        transform: translateX(100%);
+        margin: 10%;
+        background-color: #2c2c2c77;
+        padding: 2%;
+    }
+    p{
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    &__perfilVideo{
+
+        position:relative;
+    
+        width: 100%;
+    
+        justify-content: stretch;
+        
+    }
+}
+
+/*-----------------Seccion Servicios---------------*/
+
+.servicio {
+    display: flex;
+    margin: 10px;
+    padding: 15px;
+    justify-content:space-evenly;
+    
+    div{
+        width: 20vw;
+    }
+
+    &__servicio2:hover {
+        transform: scale(1.2,1.2);
+        background-color: #c53515e8;
+        color: #c7c6c6;
+
+        p{
+            color: black;
+        }
+    }
+}
+
+/*-----------------Seccion Proyectos---------------*/
+
+.proyecto{
+    
+    display: grid;
+    
+    background-color: #c7c6c6;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    justify-content: center;
+    align-content: stretch;
+    list-style-type: none;
+    padding: $alto/2 $alto - 50;
+
+    div{
+        
+        border: 1px solid;
+        padding: 2% 2% 2%;
+
+    }
+
+    &__primeraLinea{
+        background-color: #C53515;
+        color: white;
+    }
+}
+
+/*-----------------Seccion Habilidades---------------*/
+
+.habilidades {
+
+    display:inline-table;
+
+    th{
+        background-image: url(/media/terra.jfif);
+    }
+
+}
+
+/*-----------------Seccion Oficina---------------*/
+
+.ubicacion{
+    @include seccion_destacada()
+}
+
+
+/*-----------------Footer---------------*/
+
+footer p{
+
+    
+    background-image: linear-gradient(to top, #C53515, white);
+    height: 6vh;
+}
+
