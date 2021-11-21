@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    list-style-type: none;
 }
 
 @import "queries";
@@ -88,7 +89,7 @@ nav ul{
 
     &__perfilTexto{
         /*color: #ffffff;*/
-        position: absolute;
+        
         text-align: right;
         width: 40%;
         transform: translateX(100%);
@@ -127,15 +128,16 @@ nav ul{
     &__servicio2:hover {
         transform: scale(1.2,1.2);
         background-color: #c53515e8;
-        color: #c7c6c6;
+        color: #ffffff;
 
         p{
-            color: black;
+            color: white;
         }
     }
 }
 
 /*-----------------Seccion Proyectos---------------*/
+
 
 .proyecto{
     
@@ -147,20 +149,26 @@ nav ul{
     width: 100%;
     justify-content: center;
     align-content: stretch;
-    list-style-type: none;
+    
     padding: $alto/2 $alto - 50;
 
-    div{
+    li {
+        list-style-type: none;
+    }
+
+    div {
         
         border: 1px solid;
         padding: 2% 2% 2%;
 
     }
 
+
     &__primeraLinea{
         background-color: #C53515;
         color: white;
     }
+
 }
 
 /*-----------------Seccion Habilidades---------------*/
@@ -170,7 +178,7 @@ nav ul{
     display:inline-table;
 
     th{
-        background-image: url(/media/terra.jfif);
+        background-image: url(media/terra.jfif);
     }
 
 }

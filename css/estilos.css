@@ -198,8 +198,12 @@ nav ul li :hover {
           justify-content: center;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
-  list-style-type: none;
+  
   padding: 25vh 0vh;
+}
+
+li{
+  list-style-type: none;
 }
 
 .proyecto div {
