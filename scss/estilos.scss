@@ -122,12 +122,12 @@ nav ul{
     justify-content:space-evenly;
     
     div{
-        width: 20vw;
+        width: 100%;
     }
 
     &__servicio2:hover {
         transform: scale(1.2,1.2);
-        background-color: #c53515e8;
+        background-color: #ff2f00;
         color: #ffffff;
 
         p{

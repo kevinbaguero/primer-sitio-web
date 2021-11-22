@@ -2,7 +2,7 @@
 {   
 
     .servicio{
-        background-color: rgb(207, 207, 207);
+        background-color: rgb(255, 255, 255);
         color: honeydew;
         flex-direction: row;
     }
@@ -18,11 +18,13 @@
         align-items: center;
         font-size: 15px;
         
+       
+        
 
         &__servicio2:hover {
             transform: scale(1.1,1.1);
             background-color: #c53515e8;
-            color: #c7c6c6;
+            color: #ffffff;
     
             p{
                 color: white;
@@ -33,6 +35,7 @@
             width: 10vh;
             height: 10vh;
         }
+        
     
         
         
